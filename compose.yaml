@@ -1,0 +1,28 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: sotai-postgres
+    environment:
+      POSTGRES_DB: sotai_itsm
+      POSTGRES_USER: sotai_admin
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sotai_admin -d sotai_itsm"]
+      interval: 5s
+      retries: 10
+
+  mongodb:
+    image: mongo:7
+    container_name: sotai-mongodb
+    ports:
+      - "127.0.0.1:27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  postgres_data:
+  mongo_data:
