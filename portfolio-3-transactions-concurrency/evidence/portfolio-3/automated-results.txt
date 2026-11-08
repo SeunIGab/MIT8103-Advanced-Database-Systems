@@ -1,0 +1,1 @@
+TEST FAILED: OperationalError('connection to server at "127.0.0.1", port 5432 failed: fe_sendauth: no password supplied\n')

@@ -1,0 +1,12 @@
+DATABASE CONNECTION PASS: sotai_itsm
+RESET PASS: Five test tickets reset successfully
+COMMIT PASS: Ticket 101 changes persisted
+ROLLBACK PASS: Ticket 102 remains Open
+SAVEPOINT PASS: Partial rollback successful
+ATOMICITY PASS: Invalid transaction rolled back
+OPTIMISTIC CONCURRENCY PASS: Stale version update rejected
+ISOLATION PASS (READ COMMITTED): first=Open, second=Resolved
+ISOLATION PASS (REPEATABLE READ): first=Open, second=Open
+DEADLOCK PASS: {"A": "completed", "B": "deadlock detected (SQLSTATE 40P01)"}
+FINAL TEST TICKETS: [[101, "In Progress", 2], [102, "Resolved", 1], [103, "In Progress", 1], [104, "Open", 1], [105, "In Progress", 2]]
+ALL TESTS PASSED

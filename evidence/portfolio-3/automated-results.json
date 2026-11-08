@@ -1,0 +1,48 @@
+{
+  "organisation": "Sotai Digital Solutions",
+  "course": "MIT 8103",
+  "portfolio": "Transactions and Concurrency Control",
+  "isolation": [
+    {
+      "level": "READ COMMITTED",
+      "first_read": "Open",
+      "second_read": "Resolved"
+    },
+    {
+      "level": "REPEATABLE READ",
+      "first_read": "Open",
+      "second_read": "Open"
+    }
+  ],
+  "deadlock": {
+    "A": "completed",
+    "B": "deadlock detected (SQLSTATE 40P01)"
+  },
+  "tickets": [
+    [
+      101,
+      "In Progress",
+      2
+    ],
+    [
+      102,
+      "Resolved",
+      1
+    ],
+    [
+      103,
+      "In Progress",
+      1
+    ],
+    [
+      104,
+      "Open",
+      1
+    ],
+    [
+      105,
+      "In Progress",
+      2
+    ]
+  ]
+}
