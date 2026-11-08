@@ -1,8 +1,5 @@
 .env
 
-# Local Portfolio 3 backups
-/portfolio-3-backup/
-/evidence/portfolio-3-backup/
 
 # Python virtual environment
 .venv/
