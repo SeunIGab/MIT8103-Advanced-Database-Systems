@@ -1,0 +1,27 @@
+]633;E;echo "MIT 8103 - Portfolio 4";187a332d-9544-4063-89d9-5af9093a1905]633;CMIT 8103 - Portfolio 4
+MongoDB Collection Verification
+================================
+itsm_security_events 0 [
+  'itsm_security_events',
+  'itsm_assets',
+  'itsm_technicians',
+  'itsm_tickets'
+]
+itsm_assets 1 [
+  'itsm_security_events',
+  'itsm_assets',
+  'itsm_technicians',
+  'itsm_tickets'
+]
+itsm_technicians 2 [
+  'itsm_security_events',
+  'itsm_assets',
+  'itsm_technicians',
+  'itsm_tickets'
+]
+itsm_tickets 3 [
+  'itsm_security_events',
+  'itsm_assets',
+  'itsm_technicians',
+  'itsm_tickets'
+]

@@ -1,0 +1,228 @@
+test> 
+test> 
+test> 
+test> sotai_itsm
+sotai_itsm> 
+sotai_itsm> ===== 1. TICKETS BY PRIORITY =====
+
+sotai_itsm> 
+sotai_itsm> | | | | | | | | {
+  _id: 'High',
+  total_tickets: 4
+}
+{
+  _id: 'Low',
+  total_tickets: 4
+}
+{
+  _id: 'Medium',
+  total_tickets: 4
+}
+{
+  _id: 'Critical',
+  total_tickets: 3
+}
+
+sotai_itsm> 
+sotai_itsm> 
+===== 2. TICKETS BY STATUS =====
+
+sotai_itsm> 
+sotai_itsm> | | | | | | | | {
+  _id: 'In Progress',
+  total_tickets: 4
+}
+{
+  _id: 'Open',
+  total_tickets: 4
+}
+{
+  _id: 'Resolved',
+  total_tickets: 4
+}
+{
+  _id: 'Closed',
+  total_tickets: 3
+}
+
+sotai_itsm> 
+sotai_itsm> 
+===== 3. HIGH PRIORITY TICKETS =====
+
+sotai_itsm> 
+sotai_itsm> | | | | | | | | | | | | | | | | {
+  ticket_id: 3,
+  title: 'Endpoint security alert',
+  priority: 'High',
+  status: 'Resolved'
+}
+{
+  ticket_id: 4,
+  title: 'Server performance issue',
+  priority: 'Critical',
+  status: 'Closed'
+}
+{
+  ticket_id: 7,
+  title: 'Email access failure',
+  priority: 'High',
+  status: 'Resolved'
+}
+{
+  ticket_id: 8,
+  title: 'Endpoint security alert',
+  priority: 'Critical',
+  status: 'Closed'
+}
+{
+  ticket_id: 11,
+  title: 'VPN connectivity issue',
+  priority: 'High',
+  status: 'Resolved'
+}
+{
+  ticket_id: 12,
+  title: 'Email access failure',
+  priority: 'Critical',
+  status: 'Closed'
+}
+{
+  ticket_id: 15,
+  title: 'Printer configuration request',
+  priority: 'High',
+  status: 'Resolved'
+}
+
+sotai_itsm> 
+sotai_itsm> 
+===== 4. TECHNICIAN WORKLOAD =====
+
+sotai_itsm> 
+sotai_itsm> | | | | | | | | | | | | | | | | | | | | | | | | {
+  assigned_tickets: 3,
+  technician: 'Technician 1'
+}
+{
+  assigned_tickets: 3,
+  technician: 'Technician 2'
+}
+{
+  assigned_tickets: 3,
+  technician: 'Technician 3'
+}
+{
+  assigned_tickets: 3,
+  technician: 'Technician 4'
+}
+{
+  assigned_tickets: 3,
+  technician: 'Technician 5'
+}
+
+sotai_itsm> 
+sotai_itsm> 
+===== 5. SECURITY EVENTS BY SEVERITY =====
+
+sotai_itsm> 
+sotai_itsm> | | | | | | | | | | | {
+  _id: 'Low',
+  total_events: 3,
+  unresolved_events: 0
+}
+{
+  _id: 'Medium',
+  total_events: 3,
+  unresolved_events: 3
+}
+{
+  _id: 'Critical',
+  total_events: 2,
+  unresolved_events: 2
+}
+{
+  _id: 'High',
+  total_events: 2,
+  unresolved_events: 0
+}
+
+sotai_itsm> 
+sotai_itsm> 
+===== 6. TICKETS WITH ASSET INFORMATION =====
+
+sotai_itsm> 
+sotai_itsm> | | | | | | | | | | | | | | | | | | | | | | {
+  ticket_id: 1,
+  title: 'VPN connectivity issue',
+  hostname: 'SOTAI-001',
+  asset_type: 'Laptop',
+  health: 'Warning'
+}
+{
+  ticket_id: 2,
+  title: 'Email access failure',
+  hostname: 'SOTAI-002',
+  asset_type: 'Desktop',
+  health: 'Healthy'
+}
+{
+  ticket_id: 3,
+  title: 'Endpoint security alert',
+  hostname: 'SOTAI-003',
+  asset_type: 'Server',
+  health: 'Healthy'
+}
+{
+  ticket_id: 4,
+  title: 'Server performance issue',
+  hostname: 'SOTAI-004',
+  asset_type: 'Firewall',
+  health: 'Healthy'
+}
+{
+  ticket_id: 5,
+  title: 'Printer configuration request',
+  hostname: 'SOTAI-005',
+  asset_type: 'Laptop',
+  health: 'Warning'
+}
+{
+  ticket_id: 6,
+  title: 'VPN connectivity issue',
+  hostname: 'SOTAI-006',
+  asset_type: 'Desktop',
+  health: 'Healthy'
+}
+{
+  ticket_id: 7,
+  title: 'Email access failure',
+  hostname: 'SOTAI-007',
+  asset_type: 'Server',
+  health: 'Healthy'
+}
+{
+  ticket_id: 8,
+  title: 'Endpoint security alert',
+  hostname: 'SOTAI-008',
+  asset_type: 'Firewall',
+  health: 'Healthy'
+}
+{
+  ticket_id: 9,
+  title: 'Server performance issue',
+  hostname: 'SOTAI-009',
+  asset_type: 'Laptop',
+  health: 'Warning'
+}
+{
+  ticket_id: 10,
+  title: 'Printer configuration request',
+  hostname: 'SOTAI-010',
+  asset_type: 'Desktop',
+  health: 'Healthy'
+}
+
+sotai_itsm> 
+sotai_itsm> 
+AGGREGATION EXPERIMENTS COMPLETED
+
+sotai_itsm> 

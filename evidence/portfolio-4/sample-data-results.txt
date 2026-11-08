@@ -1,0 +1,32 @@
+test> 
+test> sotai_itsm
+sotai_itsm> 
+sotai_itsm> 
+sotai_itsm> 
+sotai_itsm> 
+sotai_itsm> | | | | | | | | 
+sotai_itsm> 
+sotai_itsm> | | | | | | | | | | | | | | | 
+sotai_itsm> 
+sotai_itsm> 
+sotai_itsm> 
+sotai_itsm> 
+sotai_itsm> | | | | | | | | | | | | | | | | | | | | | | | 
+sotai_itsm> 
+sotai_itsm> | | | | | | | | | | | 
+sotai_itsm> 
+sotai_itsm> | | | | | | | | | [Function: upsertMany]
+sotai_itsm> 
+sotai_itsm> 
+sotai_itsm> 
+sotai_itsm> 
+sotai_itsm> 
+sotai_itsm> 
+sotai_itsm> Sotai ITSM sample data loaded.
+
+sotai_itsm> | | | | | | | itsm_technicians: 5
+itsm_assets: 10
+itsm_tickets: 15
+itsm_security_events: 10
+
+sotai_itsm> 

@@ -1,0 +1,134 @@
+test> 
+test> 
+test> 
+test> 
+test> sotai_itsm
+sotai_itsm> 
+sotai_itsm> ===== CREATE OPERATION =====
+
+sotai_itsm> 
+sotai_itsm> 
+sotai_itsm> { acknowledged: true, deletedCount: 0 }
+sotai_itsm> 
+sotai_itsm> | | | | | | | | | | | | | | | | | | | 
+sotai_itsm> 
+sotai_itsm> Inserted ID: 6aefda6908fa0ac316d85f61
+
+sotai_itsm> 
+sotai_itsm> 
+===== READ OPERATION =====
+
+sotai_itsm> 
+sotai_itsm> | | {
+  _id: ObjectId('6aefda6908fa0ac316d85f61'),
+  ticket_id: 1001,
+  title: 'VPN Connection Failure',
+  client_id: 1,
+  asset_id: 1,
+  assigned_technician_id: 1,
+  priority: 'High',
+  status: 'Open',
+  created_at: ISODate('2026-11-08T02:11:53.873Z'),
+  comments: [
+    {
+      author: 'Service Desk',
+      message: 'User reported VPN connectivity issue'
+    }
+  ],
+  sla: {
+    response_minutes: 30,
+    resolution_minutes: 240
+  }
+}
+
+sotai_itsm> 
+sotai_itsm> 
+===== FILTERED READ =====
+
+sotai_itsm> 
+sotai_itsm> | | | {
+  ticket_id: 3,
+  title: 'Endpoint security alert',
+  status: 'Resolved'
+}
+{
+  ticket_id: 7,
+  title: 'Email access failure',
+  status: 'Resolved'
+}
+{
+  ticket_id: 11,
+  title: 'VPN connectivity issue',
+  status: 'Resolved'
+}
+{
+  ticket_id: 15,
+  title: 'Printer configuration request',
+  status: 'Resolved'
+}
+{
+  ticket_id: 1001,
+  title: 'VPN Connection Failure',
+  status: 'Open'
+}
+
+sotai_itsm> 
+sotai_itsm> 
+===== UPDATE OPERATION =====
+
+sotai_itsm> 
+sotai_itsm> | | | | | | | | | | | | | | 
+sotai_itsm> 
+sotai_itsm> Modified documents: 1
+
+sotai_itsm> 
+sotai_itsm> | | {
+  _id: ObjectId('6aefda6908fa0ac316d85f61'),
+  ticket_id: 1001,
+  title: 'VPN Connection Failure',
+  client_id: 1,
+  asset_id: 1,
+  assigned_technician_id: 2,
+  priority: 'High',
+  status: 'In Progress',
+  created_at: ISODate('2026-11-08T02:11:53.873Z'),
+  comments: [
+    {
+      author: 'Service Desk',
+      message: 'User reported VPN connectivity issue'
+    },
+    {
+      author: 'Technician 2',
+      message: 'Investigation started'
+    }
+  ],
+  sla: {
+    response_minutes: 30,
+    resolution_minutes: 240
+  }
+}
+
+sotai_itsm> 
+sotai_itsm> 
+===== DELETE OPERATION =====
+
+sotai_itsm> 
+sotai_itsm> | | 
+sotai_itsm> 
+sotai_itsm> Deleted documents: 1
+
+sotai_itsm> 
+sotai_itsm> 
+===== FINAL VERIFICATION =====
+
+sotai_itsm> 
+sotai_itsm> | | Remaining test tickets: 0
+
+sotai_itsm> 
+sotai_itsm> | | Total ITSM tickets: 15
+
+sotai_itsm> 
+sotai_itsm> 
+CRUD OPERATIONS COMPLETED
+
+sotai_itsm> 
