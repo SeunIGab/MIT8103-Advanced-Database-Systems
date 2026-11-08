@@ -1,0 +1,12 @@
+]633;E;echo "MIT 8103 - Portfolio 5";187a332d-9544-4063-89d9-5af9093a1905]633;CMIT 8103 - Portfolio 5
+Sotai ITSM - MongoDB Disaster Recovery
+======================================
+Backup: sotai-itsm-dr.archive.gz
+Restored database: sotai_itsm_restore_test
+
+===== RESTORE VERIFICATION =====
+Tickets: 15
+Assets: 10
+Technicians: 5
+Security events: 10
+Benchmark tickets: 50000

@@ -7,3 +7,9 @@
 # Python virtual environment
 .venv/
 __pycache__/
+
+# Portfolio 5 local MongoDB backups
+/portfolio-5-distributed-cloud/backups/
+
+# Portfolio 5 MongoDB backup archives
+/portfolio-5-distributed-cloud/backups/

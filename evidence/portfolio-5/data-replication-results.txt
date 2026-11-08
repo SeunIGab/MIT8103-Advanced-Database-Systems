@@ -1,0 +1,18 @@
+]633;E;echo "MIT 8103 - Portfolio 5";187a332d-9544-4063-89d9-5af9093a1905]633;CMIT 8103 - Portfolio 5
+Sotai ITSM Data Replication Verification
+======================================
+NODE: sotai-mongo-primary
+Tickets: 15
+Assets: 10
+Technicians: 5
+Security events: 10
+NODE: sotai-mongo-secondary1
+Tickets: 15
+Assets: 10
+Technicians: 5
+Security events: 10
+NODE: sotai-mongo-secondary2
+Tickets: 15
+Assets: 10
+Technicians: 5
+Security events: 10

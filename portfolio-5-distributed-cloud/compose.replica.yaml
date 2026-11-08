@@ -1,0 +1,32 @@
+services:
+  mongo1:
+    image: mongo:7
+    container_name: sotai-mongo-primary
+    command: ["mongod", "--replSet", "sotaiRS", "--bind_ip_all"]
+    ports:
+      - "127.0.0.1:27117:27017"
+    volumes:
+      - mongo_replica1:/data/db
+
+  mongo2:
+    image: mongo:7
+    container_name: sotai-mongo-secondary1
+    command: ["mongod", "--replSet", "sotaiRS", "--bind_ip_all"]
+    ports:
+      - "127.0.0.1:27118:27017"
+    volumes:
+      - mongo_replica2:/data/db
+
+  mongo3:
+    image: mongo:7
+    container_name: sotai-mongo-secondary2
+    command: ["mongod", "--replSet", "sotaiRS", "--bind_ip_all"]
+    ports:
+      - "127.0.0.1:27119:27017"
+    volumes:
+      - mongo_replica3:/data/db
+
+volumes:
+  mongo_replica1:
+  mongo_replica2:
+  mongo_replica3:

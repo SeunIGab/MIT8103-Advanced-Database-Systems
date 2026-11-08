@@ -1,0 +1,7 @@
+]633;E;echo "MIT 8103 - Portfolio 5";187a332d-9544-4063-89d9-5af9093a1905]633;CMIT 8103 - Portfolio 5
+MongoDB Replica Set Verification
+Organisation: Sotai Digital Solutions
+====================================
+sotai-mongo-primary:27017 PRIMARY
+sotai-mongo-secondary1:27017 SECONDARY
+sotai-mongo-secondary2:27017 SECONDARY
