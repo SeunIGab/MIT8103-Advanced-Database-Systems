@@ -1,0 +1,88 @@
+]633;E;echo "MIT 8103 - Portfolio 1";187a332d-9544-4063-89d9-5af9093a1905]633;CMIT 8103 - Portfolio 1
+Sotai ITSM PostgreSQL Database Verification
+==========================================
+
+Database: sotai_itsm
+PostgreSQL Version: 16
+
+===== DATABASE TABLES =====
+   table_name    
+-----------------
+ assets
+ audit_logs
+ clients
+ security_agents
+ security_alerts
+ sla_agreements
+ technicians
+ ticket_history
+ tickets
+(9 rows)
+
+
+===== TABLE CONSTRAINTS =====
+   table_name    |             constraint_name             | constraint_type 
+-----------------+-----------------------------------------+-----------------
+ assets          | 2200_16407_4_not_null                   | CHECK
+ assets          | 2200_16407_1_not_null                   | CHECK
+ assets          | 2200_16407_3_not_null                   | CHECK
+ assets          | 2200_16407_2_not_null                   | CHECK
+ assets          | assets_client_id_fkey                   | FOREIGN KEY
+ assets          | assets_pkey                             | PRIMARY KEY
+ assets          | assets_asset_id_client_id_key           | UNIQUE
+ assets          | assets_client_id_hostname_key           | UNIQUE
+ audit_logs      | 2200_16502_2_not_null                   | CHECK
+ audit_logs      | 2200_16502_3_not_null                   | CHECK
+ audit_logs      | 2200_16502_1_not_null                   | CHECK
+ audit_logs      | audit_logs_pkey                         | PRIMARY KEY
+ clients         | 2200_16390_3_not_null                   | CHECK
+ clients         | 2200_16390_1_not_null                   | CHECK
+ clients         | 2200_16390_2_not_null                   | CHECK
+ clients         | clients_pkey                            | PRIMARY KEY
+ clients         | clients_contact_email_key               | UNIQUE
+ security_agents | 2200_16477_2_not_null                   | CHECK
+ security_agents | 2200_16477_3_not_null                   | CHECK
+ security_agents | 2200_16477_4_not_null                   | CHECK
+ security_agents | 2200_16477_1_not_null                   | CHECK
+ security_agents | security_agents_asset_id_fkey           | FOREIGN KEY
+ security_agents | security_agents_pkey                    | PRIMARY KEY
+ security_agents | security_agents_asset_id_agent_name_key | UNIQUE
+ security_alerts | 2200_16490_4_not_null                   | CHECK
+ security_alerts | 2200_16490_1_not_null                   | CHECK
+ security_alerts | 2200_16490_2_not_null                   | CHECK
+ security_alerts | 2200_16490_3_not_null                   | CHECK
+ security_alerts | security_alerts_asset_id_fkey           | FOREIGN KEY
+ security_alerts | security_alerts_pkey                    | PRIMARY KEY
+ sla_agreements  | 2200_16423_1_not_null                   | CHECK
+ sla_agreements  | sla_agreements_response_minutes_check   | CHECK
+ sla_agreements  | sla_agreements_resolution_minutes_check | CHECK
+ sla_agreements  | 2200_16423_2_not_null                   | CHECK
+ sla_agreements  | 2200_16423_3_not_null                   | CHECK
+ sla_agreements  | 2200_16423_4_not_null                   | CHECK
+ sla_agreements  | 2200_16423_5_not_null                   | CHECK
+ sla_agreements  | sla_agreements_client_id_fkey           | FOREIGN KEY
+ sla_agreements  | sla_agreements_pkey                     | PRIMARY KEY
+ sla_agreements  | sla_agreements_client_id_priority_key   | UNIQUE
+ technicians     | 2200_16399_3_not_null                   | CHECK
+ technicians     | 2200_16399_1_not_null                   | CHECK
+ technicians     | 2200_16399_2_not_null                   | CHECK
+ technicians     | technicians_pkey                        | PRIMARY KEY
+ technicians     | technicians_email_key                   | UNIQUE
+ ticket_history  | 2200_16465_2_not_null                   | CHECK
+ ticket_history  | 2200_16465_1_not_null                   | CHECK
+ ticket_history  | 2200_16465_4_not_null                   | CHECK
+ ticket_history  | ticket_history_ticket_id_fkey           | FOREIGN KEY
+ ticket_history  | ticket_history_pkey                     | PRIMARY KEY
+ tickets         | 2200_16438_1_not_null                   | CHECK
+ tickets         | 2200_16438_8_not_null                   | CHECK
+ tickets         | 2200_16438_7_not_null                   | CHECK
+ tickets         | 2200_16438_5_not_null                   | CHECK
+ tickets         | 2200_16438_2_not_null                   | CHECK
+ tickets         | tickets_status_check                    | CHECK
+ tickets         | tickets_priority_check                  | CHECK
+ tickets         | tickets_client_id_fkey                  | FOREIGN KEY
+ tickets         | tickets_technician_id_fkey              | FOREIGN KEY
+ tickets         | tickets_asset_id_client_id_fkey         | FOREIGN KEY
+ tickets         | tickets_pkey                            | PRIMARY KEY
+(61 rows)
+
