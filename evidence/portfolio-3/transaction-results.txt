@@ -1,0 +1,43 @@
+BEGIN
+UPDATE 1
+INSERT 0 1
+COMMIT
+ ticket_id |   status    | version_number 
+-----------+-------------+----------------
+       101 | In Progress |              2
+(1 row)
+
+BEGIN
+UPDATE 1
+ ticket_id | status 
+-----------+--------
+       102 | Closed
+(1 row)
+
+ROLLBACK
+ ticket_id | status 
+-----------+--------
+       102 | Open
+(1 row)
+
+BEGIN
+UPDATE 1
+SAVEPOINT
+UPDATE 1
+ROLLBACK
+COMMIT
+ ticket_id |   status    
+-----------+-------------
+       103 | In Progress
+(1 row)
+
+BEGIN
+UPDATE 1
+ERROR:  insert or update on table "transaction_audit" violates foreign key constraint "transaction_audit_ticket_id_fkey"
+DETAIL:  Key (ticket_id)=(9999) is not present in table "transaction_tickets".
+ROLLBACK
+ ticket_id | status 
+-----------+--------
+       104 | Open
+(1 row)
+

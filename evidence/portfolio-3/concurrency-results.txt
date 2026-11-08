@@ -1,0 +1,17 @@
+UPDATE 1
+ ticket_id |   status    | version_number 
+-----------+-------------+----------------
+       105 | In Progress |              2
+(1 row)
+
+UPDATE 1
+ ticket_id | status | version_number 
+-----------+--------+----------------
+(0 rows)
+
+UPDATE 0
+ ticket_id |   status    | version_number 
+-----------+-------------+----------------
+       105 | In Progress |              2
+(1 row)
+

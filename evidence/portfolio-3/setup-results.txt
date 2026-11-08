@@ -1,0 +1,14 @@
+DROP TABLE
+DROP TABLE
+CREATE TABLE
+CREATE TABLE
+INSERT 0 5
+ ticket_id |       client_name       | assigned_technician | priority | status | version_number |          updated_at           
+-----------+-------------------------+---------------------+----------+--------+----------------+-------------------------------
+       101 | Apex Business Group     | Daniel Okoro        | High     | Open   |              1 | 2026-11-08 00:39:41.946112+00
+       102 | Nova Financial Services | Grace Adeyemi       | Critical | Open   |              1 | 2026-11-08 00:39:41.946112+00
+       103 | Prime Healthcare        | Michael Johnson     | Medium   | Open   |              1 | 2026-11-08 00:39:41.946112+00
+       104 | Summit Engineering      | Sarah Williams      | High     | Open   |              1 | 2026-11-08 00:39:41.946112+00
+       105 | Horizon Logistics       | Emeka Obi           | Critical | Open   |              1 | 2026-11-08 00:39:41.946112+00
+(5 rows)
+
