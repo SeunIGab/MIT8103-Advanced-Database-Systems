@@ -1,0 +1,19 @@
+                                                                  QUERY PLAN                                                                  
+----------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=286.30..286.54 rows=97 width=29) (actual time=0.504..0.508 rows=100 loops=1)
+   Sort Key: created_at DESC
+   Sort Method: quicksort  Memory: 30kB
+   Buffers: shared hit=103 read=3
+   ->  Bitmap Heap Scan on benchmark_tickets  (cost=5.17..283.10 rows=97 width=29) (actual time=0.046..0.459 rows=100 loops=1)
+         Recheck Cond: ((status)::text = 'Open'::text)
+         Heap Blocks: exact=100
+         Buffers: shared hit=100 read=3
+         ->  Bitmap Index Scan on idx_benchmark_status_created  (cost=0.00..5.15 rows=97 width=0) (actual time=0.029..0.029 rows=100 loops=1)
+               Index Cond: ((status)::text = 'Open'::text)
+               Buffers: shared read=3
+ Planning:
+   Buffers: shared hit=122 read=1
+ Planning Time: 0.322 ms
+ Execution Time: 0.549 ms
+(15 rows)
+

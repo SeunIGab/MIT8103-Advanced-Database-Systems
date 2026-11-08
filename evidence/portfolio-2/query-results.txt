@@ -1,0 +1,83 @@
+ ticket_id |       client_name       |            title             | priority |   status    |   technician    
+-----------+-------------------------+------------------------------+----------+-------------+-----------------
+        10 | Horizon Logistics       | Backup verification          | Medium   | Resolved    | Grace Adeyemi
+         9 | Horizon Logistics       | Security alert investigation | Critical | In Progress | Michael Johnson
+         8 | Summit Engineering      | Network connectivity issue   | High     | Open        | Emeka Obi
+         7 | Summit Engineering      | Password reset request       | Low      | Closed      | Daniel Okoro
+         6 | Prime Healthcare        | Linux server alert           | High     | Open        | Grace Adeyemi
+         5 | Prime Healthcare        | Outlook authentication issue | Medium   | Resolved    | Sarah Williams
+         4 | Nova Financial Services | Server backup failure        | Critical | In Progress | Emeka Obi
+         3 | Nova Financial Services | Antivirus agent missing      | High     | Open        | Michael Johnson
+         2 | Apex Business Group     | Server performance issue     | Critical | In Progress | Grace Adeyemi
+         1 | Apex Business Group     | VPN connection failure       | High     | Open        | Daniel Okoro
+(10 rows)
+
+       client_name       | total_tickets | active_tickets 
+-------------------------+---------------+----------------
+ Apex Business Group     |             2 |              2
+ Horizon Logistics       |             2 |              1
+ Nova Financial Services |             2 |              2
+ Prime Healthcare        |             2 |              1
+ Summit Engineering      |             2 |              1
+(5 rows)
+
+    full_name    | assigned_tickets | unresolved_tickets 
+-----------------+------------------+--------------------
+ Emeka Obi       |                2 |                  2
+ Grace Adeyemi   |                3 |                  2
+ Michael Johnson |                2 |                  2
+ Daniel Okoro    |                2 |                  1
+ Sarah Williams  |                1 |                  0
+(5 rows)
+
+       client_name       |    hostname    | agent_name | health_status |           last_seen           
+-------------------------+----------------+------------+---------------+-------------------------------
+ Horizon Logistics       | HORIZON-LT-001 | Huntress   | Unhealthy     | 2026-11-07 23:55:41.312562+00
+ Nova Financial Services | NOVA-LT-001    | Huntress   | Missing       | 
+ Prime Healthcare        | PRIME-SRV-001  | Huntress   | Unhealthy     | 2026-11-07 23:55:41.312562+00
+(3 rows)
+
+ ticket_id |       client_name       |            title             | priority |   status    
+-----------+-------------------------+------------------------------+----------+-------------
+         9 | Horizon Logistics       | Security alert investigation | Critical | In Progress
+         8 | Summit Engineering      | Network connectivity issue   | High     | Open
+         6 | Prime Healthcare        | Linux server alert           | High     | Open
+         4 | Nova Financial Services | Server backup failure        | Critical | In Progress
+         3 | Nova Financial Services | Antivirus agent missing      | High     | Open
+         2 | Apex Business Group     | Server performance issue     | Critical | In Progress
+         1 | Apex Business Group     | VPN connection failure       | High     | Open
+(7 rows)
+
+       client_name       | total_tickets 
+-------------------------+---------------
+ Apex Business Group     |             2
+ Horizon Logistics       |             2
+ Nova Financial Services |             2
+ Prime Healthcare        |             2
+ Summit Engineering      |             2
+(5 rows)
+
+    hostname    |       client_name       | alert_count 
+----------------+-------------------------+-------------
+ HORIZON-LT-001 | Horizon Logistics       |           1
+ NOVA-LT-001    | Nova Financial Services |           1
+ PRIME-SRV-001  | Prime Healthcare        |           1
+(3 rows)
+
+ client_name | ticket_count 
+-------------+--------------
+(0 rows)
+
+       client_name       | ticket_id |           title            |          created_at           
+-------------------------+-----------+----------------------------+-------------------------------
+ Apex Business Group     |         2 | Server performance issue   | 2026-11-07 23:55:41.310695+00
+ Horizon Logistics       |        10 | Backup verification        | 2026-11-07 23:55:41.310695+00
+ Nova Financial Services |         4 | Server backup failure      | 2026-11-07 23:55:41.310695+00
+ Prime Healthcare        |         6 | Linux server alert         | 2026-11-07 23:55:41.310695+00
+ Summit Engineering      |         8 | Network connectivity issue | 2026-11-07 23:55:41.310695+00
+(5 rows)
+
+ ticket_id | client_name | priority | created_at | resolution_minutes | deadline 
+-----------+-------------+----------+------------+--------------------+----------
+(0 rows)
+

@@ -1,0 +1,16 @@
+                                                       QUERY PLAN                                                       
+------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=2094.04..2094.27 rows=93 width=29) (actual time=5.692..5.696 rows=100 loops=1)
+   Sort Key: created_at DESC
+   Sort Method: quicksort  Memory: 30kB
+   Buffers: shared hit=844
+   ->  Seq Scan on benchmark_tickets  (cost=0.00..2091.00 rows=93 width=29) (actual time=0.085..5.640 rows=100 loops=1)
+         Filter: ((status)::text = 'Open'::text)
+         Rows Removed by Filter: 99900
+         Buffers: shared hit=841
+ Planning:
+   Buffers: shared hit=90 dirtied=1
+ Planning Time: 0.236 ms
+ Execution Time: 5.723 ms
+(12 rows)
+
