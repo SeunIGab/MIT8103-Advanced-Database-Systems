@@ -2,7 +2,7 @@
 
 ## Consolidated Portfolio Report
 
-**Case Study:** Sotai Digital Solutions — Enterprise IT Service Management and Asset Monitoring System
+**Case Study:** Sotai Digital Solutions - Enterprise IT Service Management and Asset Monitoring System
 
 ## Executive Summary
 
