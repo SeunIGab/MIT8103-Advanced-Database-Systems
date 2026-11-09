@@ -1,4 +1,4 @@
-# MIT 8103 — Advanced Database Systems
+# MIT 8103 - Advanced Database Systems
 
 ## Consolidated Portfolio Report
 
@@ -511,7 +511,7 @@ The portfolio provides practical evidence of NoSQL database concepts and their a
 
 ---
 
-## Portfolio 5 — Distributed Databases
+## Portfolio 5 - Distributed Databases
 
 
 **Project:** Sotai ITSM  
