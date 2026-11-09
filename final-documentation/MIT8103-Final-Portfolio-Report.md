@@ -42,7 +42,7 @@ This report consolidates five practical database engineering portfolios covering
 
 ---
 
-## Portfolio 1 — Relational Database Design
+## Portfolio 1 - Relational Database Design
 
 
 **Project:** Sotai ITSM – Enterprise IT Service Management and Asset Monitoring System
@@ -235,7 +235,7 @@ The design establishes the relational database foundation for subsequent MIT 810
 
 ---
 
-## Portfolio 2 — Query Optimisation
+## Portfolio 2 - Query Optimisation
 
 
 
@@ -309,7 +309,7 @@ The experiment demonstrated that appropriate B-tree indexing can substantially i
 
 ---
 
-## Portfolio 3 — Transactions and Concurrency
+## Portfolio 3 - Transactions and Concurrency
 
 
 ### Organisation
@@ -377,7 +377,7 @@ using the actual execution results.
 
 ---
 
-## Portfolio 4 — NoSQL Database Implementation
+## Portfolio 4 - NoSQL Database Implementation
 
 
 **Project:** Sotai ITSM – Enterprise IT Service Management and Asset Monitoring System
